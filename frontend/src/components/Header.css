@@ -1,0 +1,7 @@
+.header {
+  background: #1e1e1e; padding: 1rem 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo { color: #f9c74f; font-size:1.8rem; font-weight:bold; }
+.navigation ul { list-style:none; display:flex; gap:1rem; margin:0; padding:0;}
+.navigation li { font-size:1rem;}

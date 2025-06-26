@@ -1,0 +1,91 @@
+.episode-browser {
+  background: #181818;
+  padding: 32px 0 0 0;
+  border-radius: 16px;
+  margin-top: 32px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.7);
+}
+.season-tabs {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 24px;
+  padding: 0 32px;
+}
+.season-tab {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.2rem;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.season-tab.active {
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 3px solid #e50914;
+}
+.episode-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 32px 32px 32px;
+}
+.episode-card {
+  display: flex;
+  background: rgba(30,30,30,0.95);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  border: 2px solid transparent;
+}
+.episode-card.current, .episode-card:hover {
+  background: #232323;
+  border-color: #e50914;
+  box-shadow: 0 4px 16px rgba(229,9,20,0.2);
+}
+.episode-image-wrapper {
+  position: relative;
+  min-width: 160px;
+  height: 90px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.episode-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.play-icon {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: #fff;
+  background: rgba(0,0,0,0.7);
+  border-radius: 50%;
+  padding: 4px;
+}
+.episode-info {
+  padding: 16px;
+  flex: 1;
+  color: #eee;
+}
+.episode-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.episode-meta {
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-bottom: 8px;
+}
+.episode-desc {
+  font-size: 0.98rem;
+  color: #aaa;
+}

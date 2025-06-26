@@ -1,0 +1,64 @@
+/* Global Styles for Dark Theme */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+button {
+  background-color: #1f80e0;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #1a6fb3;
+}
+
+/* Utility classes */
+.container {
+  max-width: 500px;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+    margin: 1rem auto;
+    padding: 0.5rem;
+  }
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
